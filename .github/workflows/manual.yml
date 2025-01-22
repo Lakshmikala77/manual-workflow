@@ -2,6 +2,8 @@ name: Basic Workflow Dispatch Example
 
 on:
   workflow_dispatch:
+    branches:
+      - staging
     inputs:
       environment:
         description: 'The environment to deploy to'
